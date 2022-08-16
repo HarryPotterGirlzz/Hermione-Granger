@@ -1,0 +1,31 @@
+name: Feature Request
+description: Suggest an idea for this project.
+labels: feature request
+assignees: thehackerboi69github
+body:
+  - type: markdown
+    attributes:
+      value: For questions, please visit the Discord server at https://discord.gg/QrsUxMPcSu
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature request
+      description: Please describe the feature you're requesting as clear and detailed as possible.
+      placeholder: I have always missed the ability to ..., It would be good to have ...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Ideal solution
+      description: |
+        Please describe the ideal solution you'd like to see.
+        Feel free to include technical proposals to the solution if you have any.
+      placeholder: Add a new command called ...
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any other context, screenshots or links that help explain the feature request.

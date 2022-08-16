@@ -1,0 +1,59 @@
+{
+    "name": "hermione-granger",
+    "version": "1.0.0-dev",
+    "private": true,
+    "description": "A Discord bot focused on Hermione Granger, a fictional character from the Harry Potter franchise.",
+    "main": "dist/index.js",
+    "scripts": {
+        "lint": "eslint . --ext .ts --cache",
+        "lint:fix": "eslint . --ext .ts --cache --fix",
+        "dev": "nodemon",
+        "prebuild": "rimraf ./dist",
+        "build": "tsc",
+        "prestart": "npm run build",
+        "start": "node dist/index.js",
+        "test": "npm run lint",
+        "prettier": "prettier --write src",
+        "prepare": "husky install",
+        "changelog": "git cliff --prepend ./CHANGELOG.md -u -c ./cliff.toml",
+        "release": "cliff-jumper"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HarryPotterGirlzz/Hermione-Granger.git"
+    },
+    "keywords": [],
+    "author": "thehackerboi69github",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/HarryPotterGirlzz/Hermione-Granger/issues"
+    },
+    "homepage": "https://github.com/HarryPotterGirlzz/Hermione-Granger#readme",
+    "dependencies": {
+        "discord.js": "^14.1.2",
+        "mongodb": "^4.8.1",
+        "node-schedule": "^2.1.0",
+        "tslib": "^2.4.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.0.3",
+        "@commitlint/config-angular": "^17.0.3",
+        "@favware/cliff-jumper": "^1.8.6",
+        "@types/node-schedule": "^2.1.0",
+        "@typescript-eslint/eslint-plugin": "^5.32.0",
+        "@typescript-eslint/parser": "^5.32.0",
+        "conventional-changelog-cli": "^2.2.2",
+        "dotenv": "^16.0.1",
+        "eslint": "^8.21.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "nodemon": "^2.0.19",
+        "prettier": "^2.7.1"
+    },
+    "engines": {
+        "node": "18.x"
+    }
+}

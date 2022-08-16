@@ -1,0 +1,37 @@
+{
+    "include": ["src/**/*.ts"],
+    "compilerOptions": {
+        // Type Checking
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+
+        // Modules
+        "module": "CommonJS",
+
+        // Emit
+        "importHelpers": true,
+        "importsNotUsedAsValues": "error",
+        "newLine": "lf",
+        "outDir": "dist",
+        // "preserveValueImports": true, // Take a closer look at this
+
+        // Interop Constraits
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+
+        // Language and Environment
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+
+        // Completeness
+        "skipLibCheck": true
+    }
+}
