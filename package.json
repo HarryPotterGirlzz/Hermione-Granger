@@ -1,6 +1,6 @@
 {
     "name": "hermione-granger",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "private": true,
     "description": "A Discord bot focused on Hermione Granger, a fictional character from the Harry Potter franchise.",
     "main": "dist/index.js",
